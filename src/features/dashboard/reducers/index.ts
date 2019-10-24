@@ -1,3 +1,4 @@
+/* eslint-disable no-param-reassign */
 import { AnyAction } from 'redux';
 import { handleActions } from 'redux-actions';
 import produce, { Draft } from 'immer';

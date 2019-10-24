@@ -32,8 +32,8 @@ describe('Carbon intensity reducer', () => {
         {
           fuel: 'type2',
           perc: 2,
-        }
-      ]
+        },
+      ],
     };
     expect(reducer(initialState, { type: 'FETCH_CARBON_INTENSITY_SUCCESS', payload: { data } })).toEqual({
       loading: false,
