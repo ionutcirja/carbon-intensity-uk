@@ -1,0 +1,39 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "node": "current"
+        }
+      }
+    ],
+    "@babel/preset-react",
+    "@babel/preset-typescript"
+  ],
+  "plugins": [
+    "@babel/plugin-proposal-class-properties",
+    "@babel/plugin-proposal-object-rest-spread",
+    [
+      "babel-plugin-styled-components",
+      {
+        "fileName": false
+      }
+    ],
+    ["module-resolver", {
+      "root": ["."],
+      "alias": {
+        "@config": "./src/config",
+        "@app": "./src/app",
+        "@common": "./src/common",
+        "@features": "./src/features",
+        "@routes": "./src/routes",
+        "@types": "./src/types",
+        "@store": "./src/store",
+        "@reducers": "./src/reducers",
+        "@sagas": "./src/sagas"
+      },
+      "cwd": "packagejson"
+    }]
+  ]
+}

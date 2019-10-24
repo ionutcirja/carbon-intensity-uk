@@ -1,0 +1,18 @@
+{
+  "verbose": true,
+  "clearMocks": true,
+  "restoreMocks": true,
+  "collectCoverage": true,
+  "collectCoverageFrom": [
+    "client/**/*.js",
+    "!**/node_modules/**",
+    "!**/store/**",
+    "!**/reducers/**",
+    "!**/routes/**",
+    "!**/sagas/**",
+    "!**/types/**",
+    "!coverage/**",
+    "!webpack.dev.config.js",
+    "!**/server/**"
+  ]
+}
