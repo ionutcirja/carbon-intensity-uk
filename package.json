@@ -17,6 +17,8 @@
   ],
   "dependencies": {
     "axios": "^0.19.0",
+    "date-fns": "^2.6.0",
+    "history": "^4.10.1",
     "immer": "^4.0.2",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
