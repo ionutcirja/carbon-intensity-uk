@@ -3,6 +3,9 @@
   "clearMocks": true,
   "restoreMocks": true,
   "collectCoverage": true,
+  "setupFilesAfterEnv": [
+    "./config/enzyme.js"
+  ],
   "collectCoverageFrom": [
     "src/**/*.{ts,tsx}",
     "!**/node_modules/**",
