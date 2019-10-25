@@ -27,7 +27,7 @@ describe('Dashboard sagas', () => {
       };
       const generator = fetchCarbonIntensityRequest();
       expect(generator.next().value).toEqual(call(fetchCarbonIntensity));
-      expect(generator.next(data).value).toEqual(
+      expect(generator.next({ data: { data } }).value).toEqual(
         put({
           type: 'FETCH_CARBON_INTENSITY_SUCCESS',
           payload: { data },

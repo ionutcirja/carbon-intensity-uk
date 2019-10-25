@@ -9,8 +9,8 @@ import { fetchCarbonIntensity } from '../services';
 
 export function* fetchCarbonIntensityRequest(): SagaIterator {
   try {
-    const data = yield call(fetchCarbonIntensity);
-    yield put(fetchCarbonIntensitySuccess({ data }));
+    const { data } = yield call(fetchCarbonIntensity);
+    yield put(fetchCarbonIntensitySuccess({ data: data.data }));
   } catch (error) {
     yield put(fetchCarbonIntensityError({ error: true }));
   }
