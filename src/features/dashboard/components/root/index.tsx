@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import { CarbonIntensity } from '@types';
 import GenerationDate from '../date';
 import FuelLevelList from '../fuel-level-list';
 

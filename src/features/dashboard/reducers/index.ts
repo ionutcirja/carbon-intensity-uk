@@ -7,7 +7,6 @@ import {
   fetchCarbonIntensitySuccess,
   fetchCarbonIntensityError,
 } from '../actions';
-import { CarbonIntensity } from '@types';
 
 export default handleActions({
   [fetchCarbonIntensityRequest]: produce((state: Draft<CarbonIntensity>) => {

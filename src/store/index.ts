@@ -7,7 +7,6 @@ import {
 } from 'redux';
 import createSagaMiddleware, { END } from 'redux-saga';
 import reducer from '@reducers';
-import { State } from '@types';
 
 type EnhancedStore = Store & {
   runSaga: Function;

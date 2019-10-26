@@ -1,7 +1,6 @@
 import { connect } from 'react-redux';
 import { bindActionCreators, Dispatch } from 'redux';
 import { fetchCarbonIntensityRequest } from '../../actions';
-import { State, CarbonIntensity } from '@types';
 import Dashboard from '../../components/root';
 
 type DispatchProps = {
