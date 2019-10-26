@@ -12,6 +12,7 @@
     "paths": {
       "@config/*": ["./src/config/*"],
       "@app/*": ["./src/app/*"],
+      "@routes": ["./src/routes"],
       "@features/*": ["./src/features/*"],
       "@types": ["./src/types"],
       "@store": ["./src/store"],
