@@ -15,11 +15,11 @@
       "@app/*": ["./src/app/*"],
       "@routes": ["./src/routes"],
       "@features/*": ["./src/features/*"],
-      "@types": ["./src/types"],
       "@store": ["./src/store"],
       "@reducers": ["./src/reducers"],
       "@sagas": ["./src/sagas"],
-      "@style": ["./src/style"]
+      "@style": ["./src/style"],
+      "@style/*": ["./src/style/*"]
     }
   },
   "include": [

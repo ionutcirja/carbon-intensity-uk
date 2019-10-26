@@ -1,5 +1,6 @@
 import React from 'react';
 import { format, parseISO } from 'date-fns';
+import { Date } from './style';
 
 type Props = {
   label: string;
@@ -7,7 +8,7 @@ type Props = {
 }
 
 const GenerationDate = ({ label, date }: Props) => (
-  <p>{`${label}: ${format(parseISO(date), 'dd LLL yyyy HH:mm:ss')}`}</p>
+  <Date>{`${label}: ${format(parseISO(date), 'dd LLL yyyy HH:mm:ss')}`}</Date>
 );
 
 export default GenerationDate;

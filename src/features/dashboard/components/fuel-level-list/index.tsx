@@ -1,5 +1,6 @@
 import React from 'react';
 import FuelLevel from '../fuel-level';
+import { List } from './style';
 
 type Props = {
   list: Array<{
@@ -9,11 +10,11 @@ type Props = {
 }
 
 const FuelLevelList = ({ list }: Props) => (
-  <ul>
+  <List>
     {list.map((item) => (
       <FuelLevel key={item.fuel} name={item.fuel} percentage={item.perc} />
     ))}
-  </ul>
+  </List>
 );
 
 export default FuelLevelList;

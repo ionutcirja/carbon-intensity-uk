@@ -8,6 +8,8 @@ declare module 'styled-components' {
       blue: string;
       darkBlue: string;
       red: string;
+      turquoise: string;
+      white: string;
     };
     breakpoints: {
       xxsmall: string;

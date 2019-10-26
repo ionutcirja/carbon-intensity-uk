@@ -1,9 +1,17 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { render } from '@testing-library/react';
+import { ThemeProvider } from 'styled-components';
 import Component from '..';
 
 describe('Dashboard component', () => {
+  const theme = {
+    colors: {
+      red: 'red',
+      darkBlue: 'dark blue',
+    },
+  };
+
   describe('mount', () => {
     it('should call the fetchCarbonIntensityRequest action', () => {
       const props = {
@@ -11,7 +19,11 @@ describe('Dashboard component', () => {
           fetchCarbonIntensityRequest: jest.fn(),
         },
       };
-      render(<Component {...props} />);
+      render(
+        <ThemeProvider theme={theme}>
+          <Component {...props} />
+        </ThemeProvider>,
+      );
       expect(props.actions.fetchCarbonIntensityRequest).toHaveBeenCalled();
     });
   });
@@ -24,7 +36,11 @@ describe('Dashboard component', () => {
           fetchCarbonIntensityRequest: jest.fn(),
         },
       };
-      const { getByText } = render(<Component {...props} />);
+      const { getByText } = render(
+        <ThemeProvider theme={theme}>
+          <Component {...props} />
+        </ThemeProvider>,
+      );
       expect(getByText(/loading/i)).toBeDefined();
     });
 
@@ -35,7 +51,11 @@ describe('Dashboard component', () => {
           fetchCarbonIntensityRequest: jest.fn(),
         },
       };
-      const { getByText } = render(<Component {...props} />);
+      const { getByText } = render(
+        <ThemeProvider theme={theme}>
+          <Component {...props} />
+        </ThemeProvider>,
+      );
       expect(getByText(/something happened/i)).toBeDefined();
     });
 
@@ -46,7 +66,11 @@ describe('Dashboard component', () => {
           fetchCarbonIntensityRequest: jest.fn(),
         },
       };
-      const { getByText } = render(<Component {...props} />);
+      const { getByText } = render(
+        <ThemeProvider theme={theme}>
+          <Component {...props} />
+        </ThemeProvider>,
+      );
       expect(getByText(/something happened/i)).toBeDefined();
     });
 

@@ -1,4 +1,9 @@
 import React from 'react';
+import {
+  ListItem,
+  ListItemName,
+  ListItemPercentage,
+} from './style';
 
 type Props = {
   name: string;
@@ -6,11 +11,10 @@ type Props = {
 }
 
 const FuelLevel = ({ name, percentage }: Props) => (
-  <li>
-    <p>{name}</p>
-    <p>{percentage}</p>
-    <span style={{ height: `${percentage / 100}%` }} />
-  </li>
+  <ListItem>
+    <ListItemName>{name}</ListItemName>
+    <ListItemPercentage isHighValue={percentage > 20}>{`${percentage}%`}</ListItemPercentage>
+  </ListItem>
 );
 
 export default FuelLevel;

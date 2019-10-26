@@ -15,7 +15,8 @@
     "!**/routes/**",
     "!**/sagas/**",
     "!**/config/**",
-    "!**/types/**",
+    "!**/style/**",
+    "!**/style.*",
     "!coverage/**",
     "!webpack.dev.config.js",
     "!**/server/**"

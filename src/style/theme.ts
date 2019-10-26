@@ -7,6 +7,8 @@ const theme: Theme = {
     blue: '#7eb0d5',
     darkBlue: '#3f5a77',
     red: '#ef705f',
+    turquoise: '#8bd3c7',
+    white: '#ffffff',
   },
   breakpoints: {
     xxsmall: '480px',
