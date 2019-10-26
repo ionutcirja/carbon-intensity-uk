@@ -27,7 +27,8 @@
     "react-router-dom": "^5.1.2",
     "redux": "^4.0.4",
     "redux-actions": "^2.6.5",
-    "redux-saga": "^1.1.1"
+    "redux-saga": "^1.1.1",
+    "styled-components": "^4.4.0"
   },
   "devDependencies": {
     "@babel/core": "^7.6.4",
@@ -44,6 +45,7 @@
     "@types/react-router": "^5.1.2",
     "@types/react-router-dom": "^5.1.0",
     "@types/redux-actions": "^2.6.1",
+    "@types/styled-components": "^4.1.19",
     "@typescript-eslint/eslint-plugin": "^2.5.0",
     "@typescript-eslint/parser": "^2.5.0",
     "babel-eslint": "^10.0.3",
