@@ -2,7 +2,7 @@ require('webpack');
 const path = require('path');
 
 const BUILD_DIR = path.resolve(__dirname, 'public');
-const APP_DIR = path.resolve(__dirname, 'client');
+const APP_DIR = path.resolve(__dirname, 'src');
 
 const config = {
   mode: 'development',
