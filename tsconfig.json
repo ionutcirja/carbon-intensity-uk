@@ -9,17 +9,17 @@
     "isolatedModules": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "baseUrl": ".",
+    "baseUrl": "./src/",
     "paths": {
-      "@config/*": ["./src/config/*"],
-      "@app/*": ["./src/app/*"],
-      "@routes": ["./src/routes"],
-      "@features/*": ["./src/features/*"],
-      "@store": ["./src/store"],
-      "@reducers": ["./src/reducers"],
-      "@sagas": ["./src/sagas"],
-      "@style": ["./src/style"],
-      "@style/*": ["./src/style/*"]
+      "@config/*": ["./config/*"],
+      "@app/*": ["./app/*"],
+      "@routes": ["./routes"],
+      "@features/*": ["./features/*"],
+      "@store": ["./store"],
+      "@reducers": ["./reducers"],
+      "@sagas": ["./sagas"],
+      "@style": ["./style"],
+      "@style/*": ["./style/*"]
     }
   },
   "include": [
