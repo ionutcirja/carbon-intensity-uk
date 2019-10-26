@@ -8,6 +8,13 @@ const theme: Theme = {
     darkBlue: '#3f5a77',
     red: '#ef705f',
   },
+  breakpoints: {
+    xxsmall: '480px',
+    xsmall: '600px',
+    small: '768px',
+    medium: '1024px',
+    large: '1200px',
+  },
 };
 
 export default theme;

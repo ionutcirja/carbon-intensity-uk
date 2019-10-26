@@ -9,6 +9,13 @@ declare module 'styled-components' {
       darkBlue: string;
       red: string;
     };
+    breakpoints: {
+      xxsmall: string;
+      xsmall: string;
+      small: string;
+      medium: string;
+      large: string;
+    };
   }
 }
 
