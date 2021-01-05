@@ -18,7 +18,7 @@
     "test"
   ],
   "dependencies": {
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "date-fns": "^2.6.0",
     "history": "^4.10.1",
     "immer": "^4.0.2",
